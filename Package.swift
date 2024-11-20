@@ -10,13 +10,14 @@ let package = Package(
     products: [
         .framework(
             name: "crashBug",
-            targets: ["crashBug"]
+            targets: ["crashBug"].
+            dependencies: ["crashBug"]
         ),
     ],
     targets: [
         .target(
             name: "crashBug",
-            dependencies: [],
+            dependencies: ["crashBug"],
             resources: [
                 .process("Resources")
             ]
