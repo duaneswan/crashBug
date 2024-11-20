@@ -8,7 +8,7 @@ let package = Package(
         .iOS(.v13)
     ],
     products: [
-        .library(
+        .framework(
             name: "crashBug",
             targets: ["crashBug"]
         ),
